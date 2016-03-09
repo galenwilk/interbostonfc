@@ -38,6 +38,10 @@ video {
     vertical-align: middle;
 }
 
+img {
+  max-width: 100%;
+}
+
 fieldset {
     border: 0;
     margin: 0;
@@ -68,28 +72,23 @@ body {
 .content {
   height:100vh;
   overflow-y:scroll;
-  padding-top: 80px;
+  padding-top: 120px;
 }
 .wrapper {
   margin: 0 auto;
   max-width: 48em;
   width: 90%;
 }
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
 .header-container {
-  background: rgba(230,230,230,.3);
+  background: rgba(229, 229, 229, 1);
   text-align: center;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 .footer-container,
 .main aside {
-    /*border-top: 20px solid blue;*/
 }
 
 .header-container,
@@ -100,6 +99,11 @@ body {
 
 .title {
     color: rgba(5,5,5);
+}
+
+.logo {
+  margin: 10px auto;
+  width: 110px;
 }
 
 /* ==============
@@ -146,14 +150,10 @@ nav a:hover {
     font-size: 2em;
 }
 
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
 .footer-container footer {
     color: white;
     padding: 20px 0;
+    text-align: center;
 }
 
 /* ===============
@@ -168,6 +168,11 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+/* Colors 
+Inter Blue: rgba(0, 51, 102, 1);
+Inter Light Blue: rgba(196, 213, 232, 1);
+*/
+
 h1, h2, h3, h4, h5 {
   font-family: "jaf-bernino-sans-comp",sans-serif;
 }
@@ -178,7 +183,7 @@ h1, h2, h3, h4, h5 {
 
 .match {
   position: relative;
-  background: rgba(230,230,230,.3);
+  background: rgba(230,230,230,.7);
   border: 10px solid rgba(250,250,250,.3);
   border-radius: .5em;
   margin: 2em auto; padding: 1em;
@@ -187,7 +192,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .match__date {
-  background: #000080;
+  background: rgba(0, 51, 102, 1);
   border-radius: .5em;
   color: #fff;
   display: block;
@@ -196,6 +201,9 @@ h1, h2, h3, h4, h5 {
   z-index: 10;
 }
 
+.match__location {
+  margin: 1em 0 0;
+}
 
 
 
@@ -254,25 +262,6 @@ h1, h2, h3, h4, h5 {
                 box-shadow: 0 5px 10px #aaa;
     }
 
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
-
-/* ============
-    WIDE: Main
-   ============ */
-
-}
-
 @media only screen and (min-width: 1140px) {
 
 /* ===============
@@ -282,6 +271,10 @@ h1, h2, h3, h4, h5 {
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
+    }
+
+    .match {
+      width: 380px;
     }
 }
 

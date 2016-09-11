@@ -213,7 +213,7 @@ body {
   color: #fff;
   display: block;
   margin: -43px auto 0; padding: 10px 9px;
-  width: 220px;
+  width: 234px;
   z-index: 10;
 }
 .match__score {
@@ -351,7 +351,12 @@ p.tableNote {
       padding: 5px 10px;
     }
     td {
+      border-bottom: 1px solid rgba(200,200,200, .5);
       padding: 1px 10px;
+
+      &.cell-stats {
+        text-align: center;
+      }
     }
   }
 }

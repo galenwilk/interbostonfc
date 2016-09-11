@@ -181,7 +181,7 @@ body {
   display: block;
   margin: -43px auto 0;
   padding: 10px 9px;
-  width: 220px;
+  width: 234px;
   z-index: 10; }
 
 .match__score {
@@ -307,7 +307,10 @@ p.tableNote {
       text-align: left;
       padding: 5px 10px; }
     .roster table td {
+      border-bottom: 1px solid rgba(200, 200, 200, 0.5);
       padding: 1px 10px; }
+      .roster table td.cell-stats {
+        text-align: center; }
 
 .contact {
   text-align: center; }

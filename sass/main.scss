@@ -178,6 +178,19 @@ body {
   }
 }
 
+/* ======== Seasons Nav ====== */
+.previous-nav__link {
+  color: $blue;
+  margin: 0 0 0 8px;
+
+  &:visited {
+    color: lighten($blue, 20%);
+  }
+  &.previous-nav__link--active {
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
 /* ======== Main ============= */
 
 .main {
@@ -322,10 +335,10 @@ table#key .promoRow2, table#key .relegRow2 {
 .whiteRow {
   font-size: 0.8em;
   height: 10px;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 .whiteBorderLeft {
-  border-left: #FFFFFF solid 15px;
+  border-left: transparent solid 15px;
 }
 p.tableNote {
   margin-top: 5px !important;
